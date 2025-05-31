@@ -11,3 +11,13 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         alert("¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.");
     }
 });
+
+// Menú hamburguesa
+const mobileMenu = document.getElementById("mobile-menu");
+const navbar = document.getElementById("navbar");
+
+if (mobileMenu && navbar) {
+    mobileMenu.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+}
